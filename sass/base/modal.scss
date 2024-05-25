@@ -8,7 +8,7 @@
 .modal-list {}
 
 .modal-title {
-    color: var(--feauturesmain);
+    color: $text-color;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -120,7 +120,7 @@
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-    fill: var(--whathbtbg);
+    fill: $onecolor;
 }
 
 .modal-close-icons {}
@@ -135,7 +135,7 @@
 .modal-item {}
 
 .modal-name {
-    color: var(--headermail);
+    color: black;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -203,7 +203,7 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 12px 16px;
-    color: var(--text-color);
+    color: $text-color;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -227,7 +227,6 @@
 }
 
 .modal-text {
-    color: var(--feauturesmain);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
