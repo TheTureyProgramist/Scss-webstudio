@@ -5,14 +5,125 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.head-line {
-    position: relative;
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+
+&__line {
+        position: relative;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+&__weblink {
+    color: $onecolor;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    padding-left: 15px;
+}
+
+&__weblink2 {
+    color: $text-color;
+    margin-right: 93px;
+}
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    margin-right: 318px;
+}
+
+&__adres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+&__container {
+    display: flex;
+}
+
+&__url:hover {
+    color: $onecolor;
+}
+
+&__url {
+    font-size: 14px;
     transition-property: background-color, color, box-shadow, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: $info-color;
 }
 
-.head-line::after {
+&__url-2:hover {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: $onecolor;
+}
+
+&__url-2 {
+    font-size: 14px;
+    transition-property: background-color, color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: $info-color;
+}
+
+&__send:hover {
+    color: #2196F3;
+    letter-spacing: 0.28px;
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+&__text:hover {
+    color: #2196F3;
+    letter-spacing: 0.28px;
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+&__text {
+    color: $text-color;
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition-property: background-color, color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.28px;
+}
+
+&__send {
+    fill: $text-color;
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition-property: background-color, color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.28px;
+}
+
+&__line::after {
     content: '';
     display: block;
     position: absolute;
@@ -24,14 +135,17 @@
     background-color: #2196F3;
 }
 
-.header-item:hover>.header-link::after {
+&__item:hover>&__link::after {
     opacity: 1;
 }
 
-.container {
-    padding: 0 15px;
-    width: 1200px;
-    margin: 0px auto;
+&__container {
+    display: flex;
+}
+}
+
+.mail:hover {
+    fill: $onecolor;
 }
 
 .mail {
@@ -41,10 +155,10 @@
     transition-property: background-color, color, fill, box-shadow, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--info-color);
+    fill: $info-color;
 }
 
-.mail:hover {
+.telephone:hover {
     fill: var(--onecolor);
 }
 
@@ -54,11 +168,7 @@
     transition-property: background-color, color, fill, box-shadow, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill:$info-color;
-}
-
-.telephone:hover {
-    fill: var(--onecolor);
+    fill: $info-color;
 }
 
 .bg-box-2::before {
@@ -101,120 +211,6 @@
     margin-bottom: 30px;
 }
 
-.header {
-    border: 1px solid var(--hd-border);
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-
-.weblink {
-    color: $onecolor;
-    font-size: 26px;
-    font-family: Raleway;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    padding-left: 15px;
-}
-
-.weblink2 {
-    color: $text-color;
-    margin-right: 93px;
-}
-
-.header-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-    margin-right: 318px;
-}
-
-.adres {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 50px;
-}
-
-.header-container {
-    display: flex;
-}
-
-.header-address {}
-
-.header-s:hover {
-    color: $onecolor;
-}
-
-.header-s {
-    font-size: 14px;
-    transition-property: background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    color: $info-color;
-}
-
-.header-sl:hover {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    color: $onecolor;
-}
-
-.header-sl {
-    font-size: 14px;
-    transition-property: background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    font-weight: 500;
-    letter-spacing: 0.28px;
-    color: $info-color;
-}
-
-.header-send:hover {
-    color: #2196F3;
-    letter-spacing: 0.28px;
-    display: flex;
-    gap: 50px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.header-text:hover {
-    color: #2196F3;
-    letter-spacing: 0.28px;
-    display: flex;
-    gap: 50px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.header-text {
-    color: $text-color;
-    display: flex;
-    gap: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    transition-property: background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    letter-spacing: 0.28px;
-}
-
-.header-send {
-    color: var(--text-color);
-    display: flex;
-    gap: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    transition-property: background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    letter-spacing: 0.28px;
-}
-
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -230,7 +226,7 @@
 
 .hero-title {
     font-weight: 900;
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-size: 44px;
     line-height: 1.36;

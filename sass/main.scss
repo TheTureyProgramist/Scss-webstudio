@@ -1,5 +1,5 @@
-@import "./base/reset";
-@import "./base/style";
+@import "./untils/variables";
+@import "./base/reset.scss";
+@import "./base/style.scss";
 @import "./base/animations-and-overlay.scss";
 @import "./base/modal.scss";
-@import "./base/root.scss"
