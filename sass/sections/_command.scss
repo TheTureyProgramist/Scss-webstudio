@@ -1,0 +1,128 @@
+.command {
+    background-color: $codecolor;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__title {
+        color: $text-color;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
+
+    &__titles {
+        color: $text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    &__text {
+        color: $info-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    &__icon-list {
+        display: flex;
+        gap: 10px;
+        margin-left: 32px;
+    }
+
+    &__svg-button {
+        width: 44px;
+        height: 44px;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 200px;
+        background-color: white;
+    }
+
+    &__svg-button:hover {
+        width: 44px;
+        height: 44px;
+        fill: $title-color;
+        border-radius: 200px;
+        background-color: #2196F3;
+    }
+
+    &__icon {
+        display: flex;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    &__instagram {
+        width: 20px;
+        transition-property: background-color, fill, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        height: 20px;
+        fill: #AFB1B8;
+    }
+
+    &__twitter {
+        width: 20px;
+        height: 20px;
+        transition-property: background-color, fill, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: #AFB1B8;
+    }
+
+    &__facebook {
+        width: 20px;
+        height: 20px;
+        transition-property: background-color, fill, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: #AFB1B8;
+    }
+
+    &__linkedin {
+        width: 20px;
+        height: 20px;
+        fill: #AFB1B8;
+        transition-property: background-color, fill, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__instagram:hover {
+        fill: $title-color;
+    }
+
+    &__twitter:hover {
+        fill: $title-color;
+    }
+
+    &__facebook:hover {
+        fill: $title-color;
+    }
+
+    &__linkedin:hover {
+        fill: $title-color;
+    }
+}

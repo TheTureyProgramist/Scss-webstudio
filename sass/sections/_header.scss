@@ -1,0 +1,206 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+
+    &__line {
+        position: relative;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__weblink {
+        color: $onecolor;
+        font-size: 26px;
+        font-family: Raleway;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+        padding-left: 15px;
+    }
+
+    &__weblink2 {
+        color: $text-color;
+        margin-right: 93px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+        margin-right: 318px;
+    }
+
+    &__adres {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__url:hover {
+        color: $onecolor;
+    }
+
+    &__url {
+        font-size: 14px;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        color: $info-color;
+    }
+
+    &__url-2:hover {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        color: $onecolor;
+    }
+
+    &__url-2 {
+        font-size: 14px;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        letter-spacing: 0.28px;
+        color: $info-color;
+    }
+
+    &__send:hover {
+        color: #2196F3;
+        letter-spacing: 0.28px;
+        display: flex;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__text:hover {
+        color: #2196F3;
+        letter-spacing: 0.28px;
+        display: flex;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__text {
+        color: $text-color;
+        display: flex;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        letter-spacing: 0.28px;
+    }
+
+    &__send {
+        fill: $text-color;
+        display: flex;
+        color: #000;
+        gap: 50px;
+        font-size: 14px;
+        font-weight: 500;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        letter-spacing: 0.28px;
+    }
+
+    &__line::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        margin-top: 27px;
+        height: 4px;
+        justify-content: center;
+        background-color: #2196F3;
+    }
+
+    &__item:hover>&__link::after {
+        opacity: 1;
+    }
+
+    &__mail {
+        width: 16px;
+        height: 12px;
+        margin-top: -2px;
+        transition-property: background-color, color, fill, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: $info-color;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__mail:hover {
+        fill: $onecolor;
+    }
+
+    &__telephone:hover {
+        fill: $onecolor;
+    }
+
+    &__telephone {
+        width: 10px;
+        margin-top: -2px;
+        transition-property: background-color, color, fill, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: $info-color;
+        height: 16px;
+    }
+
+    &__item:hover {
+        opacity: 1;
+    }
+}
+
+.header__item-1 {
+    position: relative;
+}
+
+.header__item-2 {
+    position: relative;
+}
+
+.header__item-1:after {
+    opacity: 1;
+    position: absolute;
+    margin-top: 28px;
+    display: block;
+    content: "";
+    border-radius: 2px;
+    background: #2196F3;
+    width: 48px;
+    height: 4px;
+    flex-shrink: 0;
+    margin-left: -2px;
+}
+
+.header__item-2:after {
+    opacity: 1;
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+    background: #2196F3;
+    width: 72px;
+    margin-top: 28px;
+    height: 4px;
+    flex-shrink: 0;
+}
