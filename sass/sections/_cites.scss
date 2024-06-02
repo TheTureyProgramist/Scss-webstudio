@@ -17,12 +17,9 @@
         line-height: 1.63;
         letter-spacing: 0.48px;
         background-color: $codecolor;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        @include padding-cites($paddings-2: 22px);
+        @include padding-cites($paddings-2: 6px);
+        @include transit($timing: 250ms);
+        @include margin-cites($paddings: 22px);
     }
 
     &__button:hover {
@@ -49,9 +46,7 @@
     &__item {
         border: 1px solid #EEE;
         background: $title-color;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
     }
 
     &__title {

@@ -5,9 +5,7 @@
 
     &__line {
         position: relative;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
     }
 
     &__weblink {
@@ -64,9 +62,7 @@
 
     &__url-2 {
         font-size: 14px;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         font-weight: 500;
         letter-spacing: 0.28px;
         color: $info-color;
@@ -96,9 +92,7 @@
         gap: 50px;
         font-size: 14px;
         font-weight: 500;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         letter-spacing: 0.28px;
     }
 
@@ -109,9 +103,7 @@
         gap: 50px;
         font-size: 14px;
         font-weight: 500;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         letter-spacing: 0.28px;
     }
 
@@ -119,9 +111,7 @@
         width: 16px;
         height: 12px;
         margin-top: -2px;
-        transition-property: background-color, color, fill, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         fill: $info-color;
     }
 
@@ -140,9 +130,7 @@
     &__telephone {
         width: 10px;
         margin-top: -2px;
-        transition-property: background-color, color, fill, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         fill: $info-color;
         height: 16px;
     }
