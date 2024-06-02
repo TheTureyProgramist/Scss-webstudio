@@ -2,7 +2,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-&__bg-box-2::before {
+    &__bg-box-2::before {
         width: 270px;
         height: 120px;
         border-radius: 4px;
@@ -48,8 +48,6 @@
         gap: 30px;
         justify-content: row;
     }
-
-    &__item {}
 
     &__title {
         width: 240 px;

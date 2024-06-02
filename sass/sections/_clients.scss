@@ -2,9 +2,8 @@
     margin-bottom: 97px;
 
     &__title {
-        color: #212121;
+        color: $firstcolor;
         text-align: center;
-        font-family: Roboto;
         font-size: 36px;
         padding-top: 94px;
         font-style: normal;
@@ -30,8 +29,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
         transition-property: background-color, color, box-shadow, border, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,8 +45,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
         transition-property: fill, background-color, color, box-shadow, border;
         transition-duration: 250ms;
         animation-name: box;
@@ -75,8 +74,8 @@
         animation-duration: 5s;
         animation-delay: 0s;
         animation-direction: inherit;
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
     }
 
     &__svg-4 {
@@ -91,8 +90,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
     }
 
     &__svg-5 {
@@ -107,8 +106,8 @@
         transition-property: fill, background-color, color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
     }
 
     &__svg-6 {
@@ -123,8 +122,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #AFB1B8;
-        fill: #AFB1B8;
+        border: 1px solid $iconcolor;
+        fill: $iconcolor;
     }
 
     &__svg-1:hover {
@@ -136,8 +135,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #2196F3;
-        fill: #2196F3;
+        border: 1px solid $onecolor;
+        fill: $onecolor;
     }
 
     &__svg-2:hover {
@@ -149,8 +148,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #2196F3;
-        fill: #2196F3;
+        border: 1px solid $onecolor;
+        fill: $onecolor;
     }
 
     &__svg-3:hover {
@@ -162,8 +161,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #2196F3;
-        fill: #2196F3;
+        border: 1px solid $onecolor;
+        fill: $onecolor;
     }
 
     &__svg-4:hover {
@@ -175,8 +174,8 @@
         padding-left: 32px;
         padding-right: 32px;
         border-radius: 4px;
-        border: 1px solid #2196F3;
-        fill: #2196F3;
+        border: 1px solid $onecolor;
+        fill: $onecolor;
     }
 
     &__svg-5:hover {

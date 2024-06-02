@@ -49,12 +49,12 @@
         align-items: center;
         position: absolute;
         top: 8px;
-        border: #2196f3;
+        border: $onecolor;
         right: 8px;
     }
 
     &__close__icon {
-        fill: #000;
+        fill: $onecolor;
         width: 16px;
         transition-property: fill, background-color, color, box-shadow, opacity, border;
         transition-duration: 250ms;
@@ -67,135 +67,135 @@
     }
 
     &__title {
-    text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-}
+        text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+    }
 
-&__input {
-    width: 448px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 35px;
-    transition-property: background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__input {
+        width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 35px;
+        transition-property: background-color, color, box-shadow, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-&__input:focus {
-    outline: none;
-    border: 1px solid #2196f3;
-}
+    &__input:focus {
+        outline: none;
+        border: 1px solid $onecolor;
+    }
 
-&__link {
-    color: #2196f3;
-    text-decoration: underline !important;
-}
+    &__link {
+        color: $onecolor;
+        text-decoration: underline !important;
+    }
 
-&__button {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px 52px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 40px;
-    border-color: transparent;
-}
+    &__button {
+        color: $title-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 52px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        border-color: transparent;
+    }
 
-&__text {
-    font-size: 14px;
-    font-weight: 400;
-    color: #757575;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $info-color;
+        line-height: 1.71;
+        letter-spacing: 0.42px;
+    }
 
-&__name {
-    color: #757575;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    transition-property: background-color, color, fill, box-shadow, opacity, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__name {
+        color: $info-color;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        transition-property: background-color, color, fill, box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-&__icons {
-    position: absolute;
-    top: 32px;
-    left: 12px;
-    width: 14px;
-    transition-property: background-color, color, fill, f box-shadow, opacity, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    height: 14px;
-    fill: black;
-}
+    &__icons {
+        position: absolute;
+        top: 32px;
+        left: 12px;
+        width: 14px;
+        transition-property: background-color, color, fill, f box-shadow, opacity, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        height: 14px;
+        fill: black;
+    }
 
-&__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
 
-&__close__button:hover:focus {
-    fill: $onecolor;
-}
+    &__close__button:hover:focus {
+        fill: $onecolor;
+    }
 
-&__comment:focus {
-    outline: none;
-    border: 1px solid #2196f3;
-}
+    &__comment:focus {
+        outline: none;
+        border: 1px solid $onecolor;
+    }
 
-&__comment {
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 12px 16px;
-    color: $text-color;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.12px;
-    resize: none;
-}
+    &__comment {
+        width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 12px 16px;
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.12px;
+        resize: none;
+    }
 
-&__coment::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-}
+    &__coment::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+    }
 
-&__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
+    &__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
 
-&__icons:hover {
-    fill: #2196f3;
-}
+    &__icons:hover {
+        fill: $onecolor;
+    }
 }
 
 @keyframes modal {

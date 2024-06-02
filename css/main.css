@@ -293,11 +293,11 @@ img {
   align-items: center;
   position: absolute;
   top: 8px;
-  border: #2196f3;
+  border: #2196F3;
   right: 8px;
 }
 .modal__close__icon {
-  fill: #000;
+  fill: #2196F3;
   width: 16px;
   transition-property: fill, background-color, color, box-shadow, opacity, border;
   transition-duration: 250ms;
@@ -327,14 +327,14 @@ img {
 }
 .modal__input:focus {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid #2196F3;
 }
 .modal__link {
-  color: #2196f3;
+  color: #2196F3;
   text-decoration: underline !important;
 }
 .modal__button {
-  color: #fff;
+  color: #FFF;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -392,7 +392,7 @@ img {
 }
 .modal__comment:focus {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid #2196F3;
 }
 .modal__comment {
   width: 448px;
@@ -428,7 +428,7 @@ img {
   gap: 8px;
 }
 .modal__icons:hover {
-  fill: #2196f3;
+  fill: #2196F3;
 }
 
 @keyframes modal {
@@ -549,7 +549,6 @@ img {
 .clients__title {
   color: #212121;
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   padding-top: 94px;
   font-style: normal;
@@ -931,7 +930,7 @@ img {
 .header__weblink {
   color: #2196F3;
   font-size: 26px;
-  font-family: Raleway;
+  font-family: "Raleway";
   font-weight: 700;
   letter-spacing: 0.78px;
   padding-left: 15px;
@@ -1021,20 +1020,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.28px;
-}
-.header__line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 2px;
-  width: 100%;
-  margin-top: 27px;
-  height: 4px;
-  justify-content: center;
-  background-color: #2196F3;
-}
-.header__item:hover > .header__link::after {
-  opacity: 1;
 }
 .header__mail {
   width: 16px;
@@ -1158,11 +1143,9 @@ img {
 }
 .footer__title {
   color: #FFF;
-  font-family: Roboto;
+  margin-bottom: 20px;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
@@ -1176,11 +1159,8 @@ img {
 }
 .footer__subs-title {
   color: #FFF;
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
@@ -1205,9 +1185,7 @@ img {
 }
 .footer__e-mail {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   position: absolute;
   padding-top: 15px;
   padding-left: 16px;
@@ -1218,9 +1196,7 @@ img {
 .footer__subscribe-button {
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
@@ -1368,7 +1344,6 @@ img {
   background: rgba(47, 48, 58, 0.8);
   color: #EEE;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   z-index: 4;
@@ -1393,7 +1368,6 @@ img {
   background: rgba(47, 48, 58, 0.8);
   color: #EEE;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   z-index: 4;
@@ -1414,7 +1388,6 @@ img {
   background: rgba(47, 48, 58, 0.8);
   color: #EEE;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   z-index: 4;
