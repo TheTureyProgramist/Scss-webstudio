@@ -49,9 +49,7 @@
 
     &__url {
         font-size: 14px;
-        transition-property: background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transit($timing: 250ms);
         font-weight: 500;
         letter-spacing: 0.28px;
         color: $info-color;

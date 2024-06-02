@@ -51,8 +51,7 @@
     }
 
     &__svg-button {
-        width: 44px;
-        height: 44px;
+        @include height-weight($size: 44px);
         transition-property: background-color, color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,8 +60,6 @@
     }
 
     &__svg-button:hover {
-        width: 44px;
-        height: 44px;
         fill: $title-color;
         border-radius: 200px;
         background-color: $onecolor;
@@ -75,17 +72,15 @@
     }
 
     &__instagram {
-        width: 20px;
+        @include height-weight($size: 20px);
         transition-property: background-color, fill, color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        height: 20px;
         fill: $iconcolor;
     }
 
     &__twitter {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         transition-property: background-color, fill, color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,8 +88,7 @@
     }
 
     &__facebook {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         transition-property: background-color, fill, color, box-shadow, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,8 +96,7 @@
     }
 
     &__linkedin {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         fill: $iconcolor;
         transition-property: background-color, fill, color, box-shadow, border;
         transition-duration: 250ms;

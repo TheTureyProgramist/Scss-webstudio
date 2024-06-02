@@ -150,8 +150,7 @@
     }
 
     &__svg-button {
-        width: 44px;
-        height: 44px;
+        @include height-weight($size: 44px);
         margin-right: 10px;
         transition-property: background-color, color, box-shadow, border;
         transition-duration: 250ms;
@@ -161,9 +160,6 @@
     }
 
     &__svg-button:hover {
-        width: 44px;
-        height: 44px;
-        margin-right: 10px;
         fill: $title-color;
         border-radius: 200px;
         background-color: $onecolor;
@@ -175,26 +171,22 @@
     }
 
     &__instagram {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         fill: $title-color;
     }
 
     &__twitter {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         fill: $title-color;
     }
 
     &__facebook {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         fill: $title-color;
     }
 
     &__linkedin {
-        width: 20px;
-        height: 20px;
+        @include height-weight($size: 20px);
         fill: $title-color;
     }
 }

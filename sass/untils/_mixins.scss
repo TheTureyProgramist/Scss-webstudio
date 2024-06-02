@@ -1,0 +1,25 @@
+@mixin svg-color($color) {
+    border: 1px solid $color;
+    fill: $color;
+}
+
+@mixin transit($timing) {
+    transition-property: background-color, fill, color, box-shadow, border;
+    transition-duration: $timing;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin margin-cites($paddings) {
+    padding-right: $paddings;
+    padding-left: $paddings;
+}
+
+@mixin padding-cites($paddings-2) {
+    padding-bottom: $paddings-2;
+    padding-top: $paddings-2;
+}
+
+@mixin height-weight($size) {
+    width: $size;
+    height: $size;
+}
