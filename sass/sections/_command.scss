@@ -69,43 +69,13 @@
         gap: 10px;
     }
 
-    &__instagram {
+    &__svg {
         @include height-weight($size: 20px);
         @include transit($timing: 250ms);
         fill: $iconcolor;
     }
 
-    &__twitter {
-        @include height-weight($size: 20px);
-        @include transit($timing: 250ms);
-        fill: $iconcolor;
-    }
-
-    &__facebook {
-        @include height-weight($size: 20px);
-        @include transit($timing: 250ms);
-        fill: $iconcolor;
-    }
-
-    &__linkedin {
-        @include height-weight($size: 20px);
-        fill: $iconcolor;
-        @include transit($timing: 250ms);
-    }
-
-    &__instagram:hover {
-        fill: $title-color;
-    }
-
-    &__twitter:hover {
-        fill: $title-color;
-    }
-
-    &__facebook:hover {
-        fill: $title-color;
-    }
-
-    &__linkedin:hover {
+    &__svg:hover {
         fill: $title-color;
     }
 }

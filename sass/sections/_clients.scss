@@ -1,47 +1,78 @@
 .clients {
-    margin-bottom: 97px;
+  margin-bottom: 97px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: block;
+  @media screen and (min-width: 1199px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
-    &__title {
-        color: $firstcolor;
-        text-align: center;
-        font-size: 36px;
-        padding-top: 94px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.08px;
-        padding-top: 94px;
-        margin-bottom: 50px;
-    }
+  &__title {
+    color: $firstcolor;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 94px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
 
-    &__list {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+    flex: 1 1 16.66%;
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
+  }
 
-    &__svg {
-        width: 106px;
-        height: 60px;
-        flex-shrink: 0;
-        @include padding-cites($paddings-2: 16px);
-        @include margin-cites($paddings: 32px);
-        border-radius: 4px;
-        transition-property: fill, background-color, color, box-shadow, border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        @include svg-color($color: #AFB1B8);
-    }
 
-    &__svg:hover {
-        width: 106px;
-        height: 60px;
-        border-radius: 4px;
-        @include svg-color($color: #2196F3);
+@media screen and (max-width: 1024px) {
+    .container .item {
+        flex: 1 1 33.33%; // 3 елементи в рядку
     }
+}
 
-    &__block {
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 768px) {
+    .container .item {
+        flex: 1 1 50%;
     }
+}
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap !important;
+  }
+
+  &__svg {
+    width: 106px;
+    height: 60px;
+    flex-shrink: 0;
+    @include padding-cites($paddings-2: 16px);
+    @include margin-cites($paddings: 32px);
+    border-radius: 4px;
+    transition-property: fill, background-color, color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include svg-color($color: #afb1b8);
+  }
+
+  &__svg:hover {
+    width: 106px;
+    height: 60px;
+    border-radius: 4px;
+    @include svg-color($color: #2196f3);
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

@@ -168,22 +168,7 @@
         gap: 10px;
     }
 
-    &__instagram {
-        @include height-weight($size: 20px);
-        fill: $title-color;
-    }
-
-    &__twitter {
-        @include height-weight($size: 20px);
-        fill: $title-color;
-    }
-
-    &__facebook {
-        @include height-weight($size: 20px);
-        fill: $title-color;
-    }
-
-    &__linkedin {
+    &__svg {
         @include height-weight($size: 20px);
         fill: $title-color;
     }

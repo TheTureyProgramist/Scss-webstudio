@@ -1,70 +1,105 @@
 .detail {
-    padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1199px) {
     padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
-    &__bg-box-2::before {
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        display: block;
-        content: url(../fones/time.webp);
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
+  &__item {
+    padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+      padding-bottom: 0;
     }
 
-    &__bg-box-1::before {
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        display: block;
-        content: url(../fones/antena-2.webp);
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 4);
+    }
+  }
+
+  &__bg-box-2::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../fones/time.webp);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+
+  &__bg-box-1::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background: $extra-color;
+    content: url(../fones/antena-2.webp);  
+  }
+
+  &__bg-box-3::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../fones/notebook.webp);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+
+  &__bg-box-4::before {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: block;
+    content: url(../fones/astro.webp);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    // justify-content: row;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
-    &__bg-box-3::before {
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        display: block;
-        content: url(../fones/notebook.webp);
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
     }
+  }
+  &__title {
+    width: 240px;
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+  }
 
-    &__bg-box-4::before {
-        width: 270px;
-        height: 120px;
-        border-radius: 4px;
-        display: block;
-        content: url(../fones/astro.webp);
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
-    }
+  &__text {
+    width: 270px;
+    color: $info-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    margin-top: 10px;
+    display: block;
+  }
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: row;
-    }
-
-    &__title {
-        width: 240 px;
-        color: $text-color;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.42px;
-    }
-
-    &__text {
-        width: 270px;
-        color: $info-color;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
-        margin-top: 10px;
-        display: block;
-    }
+  &__item:last-child {
+    padding-bottom: 0;
+  }
 }

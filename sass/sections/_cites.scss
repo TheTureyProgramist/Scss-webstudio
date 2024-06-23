@@ -1,6 +1,5 @@
 .cites {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include padding-cites($paddings-2: 94px);
 
     &__buttons-list {
         display: flex;
