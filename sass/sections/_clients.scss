@@ -1,78 +1,71 @@
 .clients {
-  margin-bottom: 97px;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  display: block;
-  @media screen and (min-width: 1199px) {
-    padding-bottom: 94px;
-    padding-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: $title-color;
+
+  &__text {
+    color: #212121; 
+      text-align: center;
+      font-family: Roboto;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.84px;
+      margin-bottom: 50px;
+
+      @media screen and (max-width:1199px) {
+        margin-bottom: 30px;
+      }
   }
-
-  &__title {
-    color: $firstcolor;
-    text-align: center;
-    font-size: 36px;
-    padding-top: 94px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    padding-top: 94px;
-    margin-bottom: 50px;
-  }
-
-  &__item {
-    flex-basis: calc((100% - 30px) / 2);
-    flex: 1 1 16.66%;
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 60px) / 3);
-        }
-    
-        @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - 150px) / 6);
-        }
-  }
-
-
-@media screen and (max-width: 1024px) {
-    .container .item {
-        flex: 1 1 33.33%; // 3 елементи в рядку
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container .item {
-        flex: 1 1 50%;
-    }
-}
 
   &__list {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap !important;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
-  &__svg {
-    width: 106px;
-    height: 60px;
-    flex-shrink: 0;
-    @include padding-cites($paddings-2: 16px);
-    @include margin-cites($paddings: 32px);
+  &__item {
+    height: 92px;
     border-radius: 4px;
-    transition-property: fill, background-color, color, box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include svg-color($color: #afb1b8);
-  }
-
-  &__svg:hover {
-    width: 106px;
-    height: 60px;
-    border-radius: 4px;
-    @include svg-color($color: #2196f3);
-  }
-
-  &__block {
+    border: 1px solid $iconcolor;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
+
+  &__item:hover {
+    border: 1px solid $onecolor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:hover>&__logo {
+    fill: $onecolor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__logo {
+    fill: $iconcolor;
+    width: 106px;
+    height: 60px;
   }
 }
