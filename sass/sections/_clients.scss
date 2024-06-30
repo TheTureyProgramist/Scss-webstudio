@@ -4,19 +4,19 @@
   background: $title-color;
 
   &__text {
-    color: #212121; 
-      text-align: center;
-      font-family: Roboto;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.84px;
-      margin-bottom: 50px;
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    margin-bottom: 50px;
 
-      @media screen and (max-width:1199px) {
-        margin-bottom: 30px;
-      }
+    @media screen and (max-width:1199px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -65,7 +65,7 @@
 
   &__logo {
     fill: $iconcolor;
-    width: 106px;
-    height: 60px;
+    width: 86px;
+    height: 60px;    
   }
 }

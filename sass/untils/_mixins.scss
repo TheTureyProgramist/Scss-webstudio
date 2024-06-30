@@ -4,7 +4,7 @@
 }
 
 @mixin transit($timing) {
-    transition-property: background-color, fill, color, box-shadow, border;
+    transition-property: background-color, fill, color, box-shadow, border, transform;
     transition-duration: $timing;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

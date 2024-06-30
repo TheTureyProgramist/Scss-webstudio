@@ -268,9 +268,9 @@ img {
   padding: 48px 40px;
   overflow: scroll;
   background-color: white;
-  transform: translateY(-100%);
-  transition-property: background-color, fill, color, box-shadow, border;
-  transition-duration: 250ms;
+  transform: translateY(100%);
+  transition-property: background-color, fill, color, box-shadow, border, transform;
+  transition-duration: 8s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu.is-open {
@@ -295,6 +295,9 @@ img {
 .menu__navigation-link:hover, .menu__navigation-link:focus {
   color: #2196F3;
 }
+.menu__navigation-link--current {
+  color: black;
+}
 .menu__tel-link {
   display: block;
   margin-bottom: 32px;
@@ -318,9 +321,10 @@ img {
   gap: 10px;
 }
 .menu__clos {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
+  fill: black;
 }
 .menu__social-link {
   display: block;
@@ -349,18 +353,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: transparent;
   cursor: pointer;
-  background-size: contain;
-  fill: #000000;
-  transition-property: background-color, fill, color, box-shadow, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
@@ -402,7 +398,7 @@ img {
   width: 16px;
   height: 12px;
   margin-top: -2px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #757575;
@@ -411,7 +407,7 @@ img {
 .header__telephone {
   width: 10px;
   margin-top: -2px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-right: 4px;
@@ -420,7 +416,7 @@ img {
 }
 .header__link {
   color: var(--title-text-color);
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -448,7 +444,7 @@ img {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -472,7 +468,7 @@ img {
   gap: 50px;
   font-size: 14px;
   font-weight: 500;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.28px;
@@ -487,7 +483,7 @@ img {
 }
 .header__link {
   color: #757575;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -564,13 +560,11 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     font-size: 26px !important;
-    line-height: 1.36;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     font-size: 44px !important;
-    line-height: 1.36;
   }
 }
 .hero__button {
@@ -699,9 +693,6 @@ img {
     padding-top: 94px;
   }
 }
-.detail__item {
-  padding-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .detail__item {
     flex-basis: calc((100% - 30px) / 2);
@@ -714,13 +705,13 @@ img {
   }
 }
 .detail__bg-box-2::before {
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   display: block;
   content: url(../fones/time.webp);
   background-repeat: no-repeat;
   margin-bottom: 30px;
+  background-color: #F5F4FA;
 }
 .detail__bg-box-1::before {
   width: 270px;
@@ -768,14 +759,12 @@ img {
   }
 }
 .detail__title {
-  width: 240px;
   color: #000;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
 }
 .detail__text {
-  width: 270px;
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -837,7 +826,7 @@ img {
 .command__svg-button {
   width: 44px;
   height: 44px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 200px;
@@ -856,7 +845,7 @@ img {
 .command__svg {
   width: 20px;
   height: 20px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
@@ -933,7 +922,7 @@ img {
 }
 .clients__logo {
   fill: #AFB1B8;
-  width: 106px;
+  width: 86px;
   height: 60px;
 }
 
@@ -1262,7 +1251,7 @@ img {
   border-radius: 50%;
   display: block;
   width: 30px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 30px;
@@ -1313,7 +1302,7 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 35px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1358,7 +1347,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1367,7 +1356,7 @@ img {
   top: 32px;
   left: 12px;
   width: 14px;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 14px;
@@ -1442,7 +1431,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  transition-property: background-color, fill, color, box-shadow, border;
+  transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
