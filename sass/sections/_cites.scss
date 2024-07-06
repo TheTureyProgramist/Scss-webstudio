@@ -1,6 +1,13 @@
 .cites {
     @include padding-cites($paddings-2: 94px);
 
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
     &__buttons-list {
         display: flex;
         flex-direction: row;
@@ -58,6 +65,15 @@
         border: 1px solid #EEE;
         background: $title-color;
         @include transit($timing: 250ms);
+        max-width: 450px;
+
+        @media screen and (min-width:768px) {
+            width: 352px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 370px;
+        }
     }
 
     &__title {

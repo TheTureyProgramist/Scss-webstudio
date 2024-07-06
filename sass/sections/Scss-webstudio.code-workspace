@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Scss-webstudio",
+			"path": "../.."
+		},
+		{
+			"name": "optimize",
+			"path": "../../../GitHub/webstudio--2/optimize"
+		},
+		{
+			"name": "fones",
+			"path": "../../../GitHub/webstudio--2/fones"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Scss-webstudio"
+	}
+}

@@ -25,18 +25,21 @@
     letter-spacing: 2.64px;
     text-transform: uppercase;
     display: flex;
+    max-width: 340px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
 
   @media screen and (min-width: 768px){
-    font-size: 26px !important;
+    font-size: 26px;
+    max-width: 400px;
   }
 
  @media screen and (min-width: 1200px) {
-  font-size: 44px !important;
+  font-size: 44px;
+  max-width: 698px;
  }
+}
 
   &__button {
     background-color: $onecolor;

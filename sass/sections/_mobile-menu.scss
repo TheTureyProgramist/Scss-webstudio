@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    // width: 100vw;
     height: 100%;
     padding: 48px 40px;
     overflow: scroll;
@@ -14,11 +14,11 @@
         transform: translateY(0);
     }
 
-
     &__close {
         position: absolute;
         border: none;
         top: 10px;
+        z-index: 30;
         right: 15px;
     }
 
@@ -41,7 +41,7 @@
     }
 
     &__navigation-link--current {
-         color: black;
+        color: black;
     }
 
     &__tel-link {
@@ -99,17 +99,20 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    z-index: 6;
 }
+
 .button-close {
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding: 0;
+    padding: 0;
     width: 44px;
+    z-index: 8;
     height: 44px;
     // border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    // background-color: transparent;
+    background-color: red;
     cursor: pointer;
     // background-size: contain;
     // transition-property: background-color, fill, color, box-shadow, border;
