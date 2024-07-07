@@ -267,7 +267,7 @@ img {
   height: 100%;
   padding-left: 40px;
   padding-top: 48px;
-  padding-bottom: 48px;
+  margin-bottom: 98px;
   overflow: scroll;
   background-color: white;
   z-index: 7;
@@ -338,7 +338,7 @@ img {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   letter-spacing: 0.02em;
   color: #2196F3;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -476,10 +476,11 @@ img {
 .header__send {
   fill: #000;
   display: flex;
-  color: #000;
+  color: black;
   margin-top: 6px;
   gap: 50px;
   font-size: 14px;
+  position: relative;
   font-weight: 500;
   transition-property: background-color, fill, color, box-shadow, border, transform;
   transition-duration: 250ms;
@@ -505,12 +506,18 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 25px;
+  margin-top: 15px;
   display: block;
   width: 100%;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
+}
+@media screen and (max-width: 1200px) {
+  .header__links::after {
+    margin-top: 19px;
+  }
 }
 .header__nav-list {
   gap: 50px;
@@ -780,7 +787,7 @@ img {
   .footer__texting {
     display: flex;
     justify-content: start;
-    margin-left: 1px !important;
+    margin-left: 1px;
   }
 }
 .footer__text {

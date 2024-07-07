@@ -3,11 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    // padding-right: 100%;
     height: 100%;
     padding-left: 40px;
     padding-top: 48px;
-    padding-bottom: 48px;
+    margin-bottom: 98px;
     overflow: scroll;
     background-color: white;
     z-index: 7;
@@ -90,7 +89,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 1.222;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
         letter-spacing: 0.02em;
         color: $onecolor;
         border-right: 1px solid rgba(33, 33, 33, 0.2);

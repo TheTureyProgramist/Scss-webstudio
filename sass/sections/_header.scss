@@ -106,10 +106,11 @@
   &__send {
     fill: $text-color;
     display: flex;
-    color: #000;
+    color: black;
     margin-top: 6px;
     gap: 50px;
     font-size: 14px;
+    position: relative;
     font-weight: 500;
     @include transit($timing: 250ms);
     letter-spacing: 0.28px;
@@ -134,12 +135,17 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 25px;
+    margin-top: 15px;
     display: block;
     width: 100%;
     height: 4px;
     background-color: $onecolor;
     border-radius: 2px;
+
+    @media screen and (max-width:1200px) {
+      margin-top: 19px;
+    }
   }
 
   &__nav-list {
