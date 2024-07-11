@@ -1,6 +1,6 @@
 .container {
   padding-left: 15px;
-  outline: solid transparent;
+  outline: solid red;
   padding-right: 15px;
   margin: 0 auto;
 }
