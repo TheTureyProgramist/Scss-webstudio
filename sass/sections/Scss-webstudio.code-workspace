@@ -1,19 +1,22 @@
 {
-	"folders": [
-		{
-			"name": "Scss-webstudio",
-			"path": "../.."
-		},
-		{
-			"name": "optimize",
-			"path": "../../../GitHub/webstudio--2/optimize"
-		},
-		{
-			"name": "fones",
-			"path": "../../../GitHub/webstudio--2/fones"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Scss-webstudio"
-	}
+  "folders": [
+    {
+      "name": "optimize",
+      "path": "../../../GitHub/webstudio--2/optimize"
+    },
+    {
+      "name": "Scss-webstudio",
+      "path": "../.."
+    },
+    {
+      "name": "fones",
+      "path": "../../../GitHub/webstudio--2/fones"
+    },
+    {
+      "path": "../../../../Desktop/dectop 1x/1x"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Scss-webstudio"
+  }
 }

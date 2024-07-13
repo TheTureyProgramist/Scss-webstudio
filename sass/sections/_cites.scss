@@ -3,16 +3,28 @@
 
     &__list {
         display: flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (min-width:768px) {
+            justify-content: start;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
     }
 
     &__buttons-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        // margin-right: 300px;
         margin-bottom: 50px;
         gap: 30px;
         flex-grow: 1;
@@ -20,7 +32,6 @@
         @media screen and (max-width: 767px) {
             max-width: 421px;
         }
-
 
         @media screen and (min-width: 768px) {
             justify-content: center;
@@ -47,7 +58,6 @@
         @include transit($timing: 250ms);
         @include margin-cites($paddings: 22px);
     }
-
     &__button:hover {
         color: $title-color;
         background-color: $onecolor;
@@ -67,17 +77,17 @@
         @include transit($timing: 250ms);
         max-width: 450px;
 
-        @media screen and (min-width:768px) {
-            width: 352px;
+        @media screen and (min-width: 768px) {
+            width: 367px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width: 1200px) {
             width: 370px;
         }
     }
 
     &__title {
-        width: 322px;
+        width: 290px;
         color: $text-color;
         font-size: 18px;
         font-weight: 700;

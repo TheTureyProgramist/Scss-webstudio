@@ -5,15 +5,16 @@
     line-height: 28px;
     /* 155.556% */
     letter-spacing: 0.54px;
-    width: 322px;
+    width: 300px;
+    margin-left: 4px
 }
 
 .cites__box {
     position: relative;
-    width: 370px;
+    max-width: 370px;
     height: 294px;
     margin: 0 auto;
-    background-color: #bdbdbd;
+    background-color: transparent;
     overflow: hidden;
 }
 

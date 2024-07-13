@@ -1,10 +1,10 @@
-.hero { 
+.hero {
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../fones/overla.png);
+    url(../adaptiv/1x/telephone/hero-phone.webp);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -12,9 +12,56 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width:1200px){
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../adaptiv/2x/phone/header-phone@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../adaptiv/1x/tablet/header-tablet-1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../adaptiv/2x/tablet/hero-tablet@2x.webp);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../adaptiv/1x/decktop/header-desktop-1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../adaptiv/2x/desktop/hero-desktop@2x.webp);
+    }
   }
 
   &__title {
@@ -31,16 +78,16 @@
     margin-left: auto;
     margin-right: auto;
 
-  @media screen and (min-width: 768px){
-    font-size: 26px;
-    max-width: 400px;
-  }
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      max-width: 400px;
+    }
 
- @media screen and (min-width: 1200px) {
-  font-size: 44px;
-  max-width: 698px;
- }
-}
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      max-width: 698px;
+    }
+  }
 
   &__button {
     background-color: $onecolor;

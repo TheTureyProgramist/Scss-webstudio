@@ -5,15 +5,16 @@
   line-height: 28px;
   /* 155.556% */
   letter-spacing: 0.54px;
-  width: 322px;
+  width: 300px;
+  margin-left: 4px;
 }
 
 .cites__box {
   position: relative;
-  width: 370px;
+  max-width: 370px;
   height: 294px;
   margin: 0 auto;
-  background-color: #bdbdbd;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -240,6 +241,7 @@ img {
 .container {
   padding-left: 15px;
   outline: solid red;
+  overflow: hidden;
   padding-right: 15px;
   margin: 0 auto;
 }
@@ -556,9 +558,22 @@ img {
 }
 .cites__list {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cites__list {
+    justify-content: start;
+  }
+}
+.cites__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 .cites__buttons-list {
   display: flex;
@@ -623,7 +638,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cites__item {
-    width: 352px;
+    width: 367px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -632,7 +647,7 @@ img {
   }
 }
 .cites__title {
-  width: 322px;
+  width: 290px;
   color: #000;
   font-size: 18px;
   font-weight: 700;

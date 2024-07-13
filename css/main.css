@@ -1,6 +1,7 @@
 .container {
   padding-left: 15px;
   outline: solid red;
+  overflow: hidden;
   padding-right: 15px;
   margin: 0 auto;
 }
@@ -27,15 +28,16 @@
   line-height: 28px;
   /* 155.556% */
   letter-spacing: 0.54px;
-  width: 322px;
+  width: 300px;
+  margin-left: 4px;
 }
 
 .cites__box {
   position: relative;
-  width: 370px;
+  max-width: 370px;
   height: 294px;
   margin: 0 auto;
-  background-color: #bdbdbd;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -551,7 +553,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../fones/overla.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/1x/telephone/hero-phone.webp);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -559,10 +561,33 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/2x/phone/header-phone@2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/1x/tablet/header-tablet-1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/2x/tablet/hero-tablet@2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/1x/decktop/header-desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../adaptiv/2x/desktop/hero-desktop@2x.webp);
   }
 }
 .hero__title {
