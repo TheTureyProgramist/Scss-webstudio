@@ -235,7 +235,6 @@ img {
   display: block;
   max-width: 100%;
   width: 100%;
-  height: auto;
 }
 
 .container {
@@ -638,7 +637,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cites__item {
-    width: 367px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1200px) {

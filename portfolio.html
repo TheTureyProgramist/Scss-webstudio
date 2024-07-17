@@ -14,50 +14,47 @@
 
 <body>
   <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <div class="header__site">
-            <a href="./index.html" class="header__weblink header__item"
-              >Web<span class="header__weblink2">Studio</span></a
-            >
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__send" href="./index.html">Студія</a>
-              </li>
-              <li class="header__item">
-                <a class="header__send header__links" href="./portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="header__item">
-                <a class="header__send" href="./index.html">Контакти</a>
-              </li>
-            </ul>
-            <button type="button" class="header__menu js-open-menu">
-              <svg width="40" height="40">
-                <use href="./fones/symbol-defs-3.svg#icon-burger"></use>
-              </svg>
-            </button>
-          </div>
-          <ul class="header__contacts-list">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__site">
+          <a href="./index.html" class="header__weblink header__item">Web<span
+              class="header__weblink2">Studio</span></a>
+          <ul class="header__list">
             <li class="header__item">
-              <a class="header__contacts" href="mailto:info@devstudio.com">
-                <svg class="header__mail" width="16" height="12">
-                  <use href="./fones/symbol-defs-3.svg#icon-mail"></use></svg>
-                info@devstudio.com</a
-              >
+              <a class="header__send" href="./index.html">Студія</a>
             </li>
             <li class="header__item">
-              <a class="header__contacts" href="tel:+380961111111">
-                <svg class="header__telephone" width="10" height="16">
-                  <use href="./fones/symbol-defs-3.svg#icon-telephone"></use></svg>
-                +38 096 111 11 11</a
-              >
+              <a class="header__send header__links" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a class="header__send" href="./index.html">Контакти</a>
             </li>
           </ul>
+          <button type="button" class="header__menu js-open-menu">
+            <svg width="40" height="40">
+              <use href="./fones/symbol-defs-3.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
+        <ul class="header__contacts-list">
+          <li class="header__item">
+            <a class="header__contacts" href="mailto:info@devstudio.com">
+              <svg class="header__mail" width="16" height="12">
+                <use href="./fones/symbol-defs-3.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="header__item">
+            <a class="header__contacts" href="tel:+380961111111">
+              <svg class="header__telephone" width="10" height="16">
+                <use href="./fones/symbol-defs-3.svg#icon-telephone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
   <hr>
   <main>
     <section class="cites">
@@ -82,7 +79,16 @@
         <ul class="cites__list">
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-1-2x.webp" width="370" height="294" alt="Веб-сайт - технокряк" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-1-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-1-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work1tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work1tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work1phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work1phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-1-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -95,8 +101,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-2-2x.webp" alt="Постер New Orlean vs Golden Star - Дизайн" width="370"
-                height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-2-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-2-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work2tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work2tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work2phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work2phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-2-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -109,8 +123,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-3-2x.webp" alt="Додаток - Ресторан Seafood" width="370" height="294"
-                class="image" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-3-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-3-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work3tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work3tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work3phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work3phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-3-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -123,7 +145,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-4-2x.webp" alt="Проєкт Prime - Маркетинг" width="370" height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-4-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-4-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work4tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work4tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work4phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work4phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-4-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -136,7 +167,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-5-2x.webp" alt="Проєкт Boxes - Додаток" width="370" height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-5-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-5-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work5tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work5tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work5phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work5phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-5-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -149,8 +189,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-6-2x.webp" alt="Веб-сайт Inspiration has no Borders" width="370"
-                height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-6-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-6-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work6tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work6tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work6phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work6phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-6-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -163,7 +211,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-7-2x.webp" alt="Видання Limited Edition Дизайн" width="370" height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-7-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-7-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work7tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work7tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work7phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work7phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-7-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -176,7 +233,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-8-2x.webp" alt="Проєкт LAB" width="370" height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-8-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-8-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work8tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work8tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work8phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work8phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-8-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -189,7 +255,16 @@
           </li>
           <li class="cites__item">
             <div class="cites__box cites__image-container">
-              <img src="./adaptiv/2x/desktop/portfolio/site-work-9-2x.webp" alt="Додаток Growing Business" width="370" height="294" />
+              <picture>
+                <source media="(min-width:1200px)"
+                  srcset="./adaptiv/1x/decktop/portfolio/site-work-9-1x.webp 1x, ./adaptiv/2x/desktop/portfolio/site-work-9-2x.webp 2x">
+                <source media="(min-width:768px)"
+                  srcset="./adaptiv/1x/tablet/portfolio/site-work9tablet-1x.webp 1x, ./adaptiv/2x/tablet/portfolio/site-work9tablet-2x.webp 2x">
+                <source media="(min-width:320px)"
+                  srcset="./adaptiv/1x/telephone/portfolio/site-work9phone-1x.webp 1x, ./adaptiv/2x/phone/portfolio/site-work9phone-2x.webp 2x">
+                <img class="cites__image" src="./adaptiv/2x/desktop/portfolio/site-work-9-2x.webp" width="370"
+                  height="294" alt="Веб-сайт - технокряк" />
+              </picture>
               <div class="cites__overlay">
                 <p class="cites__overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -205,7 +280,7 @@
       </div>
     </section>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__flex">
         <div class="footer__boxst">

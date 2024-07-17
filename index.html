@@ -61,7 +61,7 @@
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <div class="hero__title">
           <button class="hero__button" type="submit" data-modal-open>Замовити послугу</button>
-      </div>
+        </div>
       </div>
     </section>
     <section class="detail">
@@ -107,7 +107,18 @@
         <ul class="progect__backet">
           <li class="progect__item">
             <div class="progect__decorate-1">
-                <img src="./adaptiv/2x/desktop/work-1-2x.webp" width="370" height="294" class="progect__decorate-photo-1" alt="working">
+              <picture>
+                <source srcset="./adaptiv/1x/decktop/work-1-1x.webp 1x, ./adaptiv/2x/desktop/work-1-2x.webp 2x"
+                  media="(min-width: 1200px)">
+                <source
+                  srcset="./adaptiv/1x/decktop/worker1tablet-1x.webp 1x, ./adaptiv/2x/tablet/worker1tablet-2x.webp 2x"
+                   media="(min-width:768px)">
+                <source
+                  srcset="./adaptiv/1x/telephone/worker1phone-1x.webp 1x, ./adaptiv/2x/tablet/worker1phone-2x.webp 2x"
+                   media="(min-width:320px)">
+                <img src="./adaptiv/1x/decktop/work-1-1x.webp" width="370" height="294"
+                  alt="Ігор Дем'яненко - Product Designer" />
+              </picture>
               <p class="progect__text">
                 Десктопні додатки
               </p>
@@ -115,13 +126,35 @@
           </li>
           <li class="progect__item">
             <div class="progect__decorate-2">
-              <img src="./adaptiv/2x/desktop/work-2-2x.webp" class="progect__decorate-photo-2" width="370" height="294" alt="working" />
+              <picture>
+                <source srcset="./adaptiv/1x/decktop/work-2-1x.webp 1x, ./adaptiv/2x/desktop/work-2-2x.webp 2x"
+                  media="(min-width: 1200px)">
+                <source
+                  srcset="./adaptiv/1x/decktop/worker2tablet-1x.webp 1x, ./adaptiv/2x/tablet/worker2tablet-2x.webp 2x"
+                   media="(min-width:768px)">
+                <source
+                  srcset="./adaptiv/1x/telephone/worker2phone-1x.webp 1x, ./adaptiv/2x/tablet/worker2phone-2x.webp 2x"
+                   media="(min-width:320px)">
+                <img src="./adaptiv/1x/decktop/work-2-1x.webp" width="370" height="294"
+                  alt="Ігор Дем'яненко - Product Designer" />
+              </picture>
               <p class="progect__text">Мобільні додатки</p>
             </div>
           </li>
           <li class="progect__item">
             <div class="progect__decorate-3">
-              <img src="./adaptiv/2x/desktop/work-3-2x.webp" width="370" height="294" alt="working" />
+              <picture>
+                <source srcset="./adaptiv/1x/decktop/work-3-1x.webp 1x, ./adaptiv/2x/desktop/work-3-2x.webp 2x"
+                  media="(min-width: 1200px)">
+                <source
+                  srcset="./adaptiv/1x/decktop/worker3tablet-1x.webp 1x, ./adaptiv/2x/tablet/worker3tablet-2x.webp 2x"
+                   media="(min-width:768px)">
+                <source
+                  srcset="./adaptiv/1x/telephone/worker3phone-1x.webp 1x, ./adaptiv/2x/tablet/worker3phone-2x.webp 2x"
+                   media="(min-width:320px)">
+                <img src="./adaptiv/1x/decktop/work-3-1x.webp" width="370" height="294"
+                  alt="Ігор Дем'яненко - Product Designer" />
+              </picture>
               <p class="progect__text">
                 Дизайнерські рішення
               </p>
@@ -135,7 +168,12 @@
         <h2 class="command__title">Наша команда</h2>
         <ul class="command__list">
           <li class="command__item">
-            <img src="./adaptiv/2x/desktop/mukola-2x.webp" width="270" height="260" alt="Микола Тарасов - Marketing" />
+            <picture>
+                <source srcset="./adaptiv/1x/decktop/mukola-1x.webp 1x, ./adaptiv/2x/desktop/mukola-2x.webp 2x"
+                  media="(min-width: 1200px)">
+                <img src="./adaptiv/1x/decktop/mukola-1x.webp" width="370" height="294"
+                  alt="Ігор Дем'яненко - Product Designer" />
+              </picture>
             <h3 class="command__titles">Микола Тарасов</h3>
             <p class="command__text">Marketing</p>
             <div class="command__icon-list">
@@ -170,8 +208,10 @@
           </li>
           <li class="command__item">
             <picture>
-              <source srcset="./adaptiv/1x/decktop/igor-1x.webp 1x, ./adaptiv/2x/desktop/igor-2x.webp 2x" media=" (min-width: 1200px)" type="adaptiv/webp">
-             <img src="./adaptiv/1x/decktop/igor-1x.webp" width="270" height="260" alt="Ігор Дем'яненко - Product Designer" /> 
+              <source srcset="./adaptiv/1x/decktop/igor-1x.webp 1x, ./adaptiv/2x/desktop/igor-2x.webp 2x"
+                media="(min-width: 1200px)">
+              <img src="./adaptiv/1x/decktop/igor-1x.webp" width="270" height="260"
+                alt="Ігор Дем'яненко - Product Designer" />
             </picture>
             <h3 class="command__titles">Ігор Дем'яненко</h3>
             <p class="command__text">Product Designer</p>
@@ -206,7 +246,12 @@
               </div>
           </li>
           <li class="command__item">
-            <img src="./adaptiv/2x/desktop/olga-2x.webp" width="270" height="260" alt="Ольга Рєпіна - Frontend Developer" />
+            <picture>
+              <source srcset="./adaptiv/1x/decktop/olga-1x.webp 1x, ./adaptiv/2x/desktop/olga-2x.webp 2x"
+                media=" (min-width: 1200px)">
+              <img src="./adaptiv/1x/decktop/olga-1x.webp" width="270" height="260"
+                alt="Ігор Дем'яненко - Product Designer" />
+            </picture>
             <h3 class="command__titles">Ольга Рєпіна</h3>
             <p class="command__text">Frontend Developer</p>
             <div class="command__icon-list">
@@ -239,7 +284,12 @@
                 </div>
               </div>
           <li class="command__item">
-            <img src="./adaptiv/2x/desktop/muxailo-2x.webp" width="270" height="260" alt="Михайло Єрмаков - UI Designer" />
+            <picture>
+              <source srcset="./adaptiv/1x/decktop/muxailo-1x.webp 1x, ./adaptiv/2x/desktop/muxailo-2x.webp 2x"
+                media=" (min-width: 1200px)">
+              <img src="./adaptiv/1x/decktop/muxailo-1x.webp" width="270" height="260"
+                alt="Ігор Дем'яненко - Product Designer" />
+            </picture>
             <h3 class="command__titles">Михайло Єрмаков</h3>
             <p class="command__text">UI Designer</p>
             <div class="command__icon-list">
@@ -383,7 +433,7 @@
       </div>
     </div>
   </footer>
-<div class="menu js-menu-container">
+  <div class="menu js-menu-container">
     <button class="menu__close js-close-menu button-close" type="button">
       <svg width="40" height="40" class="menu__clos">
         <use href="./fones/symbol-defs-3.svg#icon-cross"></use>
